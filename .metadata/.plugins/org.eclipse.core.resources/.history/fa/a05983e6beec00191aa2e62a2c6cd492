@@ -1,0 +1,28 @@
+package recursive;
+
+import java.util.Scanner;
+
+public class Prod {
+
+	public static void main(String[] args) {
+		int i;
+		int array [] = new int [13];
+		Scanner kb = new Scanner (System.in);
+		kb.hasNextInt();
+		for (i=1;i<array.length;i++) {
+			array [i]=i;
+		}
+		System.out.println(array[i]);
+		
+	}
+	int prod(int prod[]) {
+		int i=0;
+				for(i=1;i<prod.length;i++)
+				{
+					if(prod[i]!=i)
+						return -1;
+					
+				}
+		return prod[i];
+
+}}

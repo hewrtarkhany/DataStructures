@@ -1,0 +1,10 @@
+package recursive;
+
+public class Prod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,66 @@
+------------------testAddLast()----
+{A}
+{A->B}
+{A->B->null}
+{A->B->null->C}
+-----------------------------
+------------testRemoveFirst()------
+{apple->bad->null}, removed:null
+{bad->null}, removed:apple
+{null}, removed:bad
+{}, removed:null
+java.lang.NullPointerException
+-----------------------------
+----------------testContains()------
+true
+true
+true
+false
+false
+false
+false
+false
+-----------------------------
+----------------testRemove(Object)---
+{2:Morning->3:Abby->4:Tim->5:Tom->6:Tony}
+{2:Morning->3:Abby->4:Tim->5:Tom->6:Tony}
+{2:Morning->3:Abby->4:Tim->5:Tom}
+{2:Morning->3:Abby->4:Tim->5:Tom}
+{2:Morning->3:Abby->5:Tom}
+{null->apple->bad->null}
+{apple->bad->null}
+{apple->bad}
+{}
+-----------------------------
+---------------Test RemoveAllCopies()---
+{B->A->A->A}
+{A->A->A}
+{}
+{A}
+-----------------------------
+-----------------testInterleave()---
+{null->1:Good->apple->2:Morning->bad->3:Abby->null->4:Tim->5:Tom->6:Tony}
+{}
+-----------------------------
+--------------testAddIndex()------
+{A0->null->apple->bad->null}
+{A0->null->apple->bad->null->A5}
+{A0->null->apple->A3->bad->null->A5}
+{B0}
+java.lang.IndexOutOfBoundsException: bad size
+-----------------------------
+--------------testRemoveIndex()------
+{apple->bad->null}
+{apple->bad}
+java.lang.IndexOutOfBoundsException: bad index
+{apple}
+{}
+-----------------------------
+--------------testGetIndex()------
+null
+apple
+bad
+null
+java.lang.IndexOutOfBoundsException
+4:Tim
+-----------------------------

@@ -1,0 +1,30 @@
+
+add first method
+1), make a new node NN and store the Object item into the new node NN's data field.
+
+2) NN's next reference points to the node referenced by head.next.
+
+3) Then assign NN to the next reference in the dummy head node.
+
+4) increase size of this list by one.
+
+remove first method
+1. check is size is smaller than zero if yes throw and exception 
+2. creat a nn and assign it to this.head.next
+3.then this.head.next assign to nn.next to pu the new node in the right spot
+4.decrement the size 
+5. retun the data of the node that was removed
+
+contain method
+
+1. check if the head is null in another word if it is an empy list
+2.creat a for look in that creat a new node name cur assign it to this.head.next
+3. walk it through till cur.next == null by increamenting cu=cur.next
+4.if statement if the object we want to find is null and cur.data is nulll (OR) cur.data .equal(objct) return true
+5 else return false 
+
+boolean remove(Object o) method
+
+1. creat NEW NODE ListNode cur =this.head.next assign it to the head.next
+2. creat another node call ir prev to assign it to the one before cur which is this.head
+3. 
